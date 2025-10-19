@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ch. Mohsin Khan — Profile</title>
+
+  <!-- IMPORTANT: this expects stylesheet.css in the SAME folder as index.html -->
+  <link rel="stylesheet" href="../css/stylesheet.css" />
+</head>
+<body>
+  <!-- ===== HEADER ===== -->
+  <header id="top">
+    <nav class="navbar">
+      <h1 class="brand">Ch. Mohsin Khan</h1>
+      <ul class="nav-links">
+  <li><a href="index.html">Home</a></li>
+  <li><a href="about.html">About</a></li>
+  <li><a href="education.html">Education</a></li>
+  <li><a href="projects.html">Projects</a></li>
+  <li><a href="contact.html">Contact</a></li>
+</ul>
+
+      <button class="menu-toggle" aria-label="Toggle menu" hidden>☰</button>
+    </nav>
+  </header>
+
+  <!-- ===== ABOUT SECTION ===== -->
+  <main>
+    <section class="profile" id="about">
+      <!-- Put your image at assets/mohsin-pic.jpeg, or update the src to match -->
+      <img src="../assets/mohsin-pic.jpeg" alt="Photo of Ch. Mohsin Khan" class="profile-img" />
+    
+  <p class="lead">
+    I am <strong>Ch. Mohsin Khan</strong> — a <strong>Teacher</strong>, <strong>Trainer</strong>, <strong>Mentor</strong>, 
+    <strong>Researcher</strong>, and <strong>Web Developer</strong> with over 
+    <strong>18 years of professional experience</strong> in education, training, and human development.
+  </p>
+
+  <p class="lead">
+    My work focuses on developing teachers’ capacity, mentoring educators, and designing programs that promote 
+    <em>leadership, motivation, and performance excellence</em>. 
+    Alongside my educational leadership journey, I pursue web development as a creative and analytical outlet 
+    for building meaningful digital learning spaces.
+  </p>
+</section>
+
+
+      <!-- optional CV button (uncomment if you upload a PDF) -->
+      <!-- <a class="btn primary" href="Mohsin_Khan_CV.pdf" download>Download CV</a> -->
+    </section>
+
+    <!-- ===== SKILLS ===== -->
+    <section class="skills" id="skills">
+  <h2>💼 Professional Skills</h2>
+
+  <div class="skill">
+    <label>Teaching & Educational Leadership</label>
+    <div class="bar"><div class="fill html" data-value="95%"></div></div>
+  </div>
+
+  <div class="skill">
+    <label>Training & Capacity Building</label>
+    <div class="bar"><div class="fill css" data-value="90%"></div></div>
+  </div>
+
+  <div class="skill">
+    <label>Mentoring & Counselling</label>
+    <div class="bar"><div class="fill js" data-value="92%"></div></div>
+  </div>
+
+  <div class="skill">
+    <label>Research & Organizational Behavior</label>
+    <div class="bar"><div class="fill research" data-value="88%"></div></div>
+  </div>
+
+  <div class="skill">
+    <label>Web Development (HTML, CSS, JS)</label>
+    <div class="bar"><div class="fill webdev" data-value="87%"></div></div>
+  </div>
+</section>
+
+
+    <!-- ===== PROJECTS ===== -->
+    <section class="projects" id="projects">
+      <h2>🛠️ Projects</h2>
+
+      <div class="project-card">
+        <h3>Portfolio Website</h3>
+        <p>A sleek personal portfolio built with HTML &amp; CSS showcasing my skills and contact info.</p>
+      </div>
+
+      <div class="project-card">
+        <h3>Landing Page</h3>
+        <p>A colorful landing page for a fictional product, designed with responsive layout and animations.</p>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section class="social" id="contact">
+      <h2>🔗 Connect with Me</h2>
+      <div class="links">
+        <a class="btn" href="#">🌐 Website</a>
+        <a class="btn" href="https://facebook.com/chaudarymohsinkhan" target="_blank" rel="noopener">📘 Facebook</a>
+        <a class="btn" href="https://x.com/mohsinmughal5" target="_blank" rel="noopener">🐦 X</a>
+        <a class="btn" href="https://linkedin.com/in/mohsinmughal5" target="_blank" rel="noopener">💼 LinkedIn</a>
+      </div>
+      <p class="email">📧 chaudarymohsinkhan@gmail.com | Chakwal, Pakistan</p>
+    </section>
+  </main>
+
+  <!-- ===== BACK TO TOP ===== -->
+  <button id="backToTop" title="Go to top" aria-label="Back to top">⬆</button>
+
+  <footer>
+    <p>© 2025 Ch. Mohsin Khan. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Smooth internal scroll
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        const target = document.querySelector(this.getAttribute('href'));
+        if (!target) return; // allow external anchors to behave normally
+        e.preventDefault();
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      });
+    });
+
+    // Back to top control
+    const topBtn = document.getElementById('backToTop');
+    window.addEventListener('scroll', () => {
+      topBtn.style.display = (window.scrollY > 240) ? 'block' : 'none';
+    });
+    topBtn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+
+    // Trigger skill bar animations after page loads
+    window.addEventListener('load', () => {
+      document.querySelectorAll('.fill').forEach(el => {
+        const value = el.getAttribute('data-value') || '0%';
+        // small delay to make the animation visible
+        setTimeout(() => el.style.width = value, 100);
+      });
+    });
+  </script>
+</body>
+</html>
+
+
+
+// <!-- <!DOCTYPE html>
+// <html lang="en">
+// <head>
+//   <meta charset="UTF-8">
+//   <meta name="viewport" content="width=device-width, initial-scale=1">
+//   <title>Mohsin</title>
+//   <link rel="stylesheet" href="/css/stylesheet.css">
+// </head>
+// <body>
+// <header>
+//     <h1>Ch. Mohsin Khan</h1>
+//     <div class="header-links">
+//     <a href="https://facebook.com/chaudarymohsinkhan"> Teacher </a>|
+//     <a href="https://facebook.com/chaudarymohsinkhan">  Web Developer </a>|
+//     <a href="https://facebook.com/chaudarymohsinkhan"> Speaker</a>
+// </div>
+//   </header>
+
+//   <section class="profile">
+//     <img src="/assets/mohsin-pic.jpeg" alt="Photo" class="profile-img">
+//     <p>Hello! I'm Ch. Mohsin Khan from Chakwal, Pakistan. I love crafting beautiful websites and learning new web technologies. Currently mastering HTML & CSS, and soon diving into Bootstrap!</p>
+//   </section>
+
+//   <section class="skills">
+//     <h2>💡 Skills</h2>
+//     <div class="skill">
+//       <label>HTML</label>
+//       <div class="bar"><div class="fill html"></div></div>
+//     </div>
+//     <div class="skill">
+//       <label>CSS</label>
+//       <div class="bar"><div class="fill css"></div></div>
+//     </div>
+//     <div class="skill">
+//       <label>JavaScript</label>
+//       <div class="bar"><div class="fill js"></div></div>
+//     </div>
+//   </section>
+
+//   <section class="projects">
+//     <h2>🛠️ Projects</h2>
+//     <div class="project-card">
+//       <h3>Portfolio Website</h3>
+//       <p>A sleek personal portfolio built with HTML & CSS showcasing my skills and contact info.</p>
+//     </div>
+//     <div class="project-card">
+//       <h3>Landing Page</h3>
+//       <p>A colorful landing page for a fictional product, designed with responsive layout and animations.</p>
+//     </div>
+//   </section>
+
+//   <section class="social">
+//     <h2>🔗 Connect with Me</h2>
+//     <a href="#">🌐 Website</a>
+//     <a href="https://facebook.com/chaudarymohsinkhan">📘 Facebook</a>
+//     <a href="https://x.com/mohsinmughal5">🐦 Twitter</a>
+//     <a href="https://linkedin.com/mohsinmughal5">💼 LinkedIn</a>
+//   </section>
+
+//   <footer>
+//     <p>📧 chaudarymohsinkhan@gmail.com | Chakwal, Pakistan</p>
+//   </footer>
+// </body>
+// </html>
