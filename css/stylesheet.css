@@ -220,6 +220,60 @@ footer { text-align:center; padding:18px 12px; background: linear-gradient(90deg
   font-style: italic;
 }
 
+.projects-preview {
+  text-align: center;
+  padding: 80px 20px;
+  background: #f8fafc;
+}
+
+.projects-preview h2 {
+  font-size: 2rem;
+  color: #1565c0;
+  margin-bottom: 10px;
+}
+
+.projects-preview p {
+  color: #475569;
+  max-width: 650px;
+  margin: 0 auto 40px;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.project-preview-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+  max-width: 900px;
+  margin: 0 auto 40px;
+}
+
+.project-card {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.view-more {
+  background: #1565c0;
+  color: #fff;
+  text-decoration: none;
+  padding: 12px 30px;
+  border-radius: 30px;
+  font-weight: 500;
+  transition: background 0.3s;
+}
+
+.view-more:hover {
+  background: #0d47a1;
+}
 
 /*
 
