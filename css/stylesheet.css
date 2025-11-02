@@ -40,7 +40,7 @@ header {
 
 /* Buttons */
 .btn {
-  display:inline-block; text-decoration:none; padding:10px 14px; border-radius:24px;
+  display:inline-block; text-decoration:none; padding:10px 14px; border-radius:24px; margin-top: 2px;
   background:#2196f3; color:#fff; font-weight:600; transition:transform .18s ease, box-shadow .18s;
 }
 .btn:hover { transform:translateY(-3px); box-shadow:0 8px 20px rgba(33,150,243,0.15); }
@@ -78,6 +78,7 @@ header {
   background: #fff; max-width:720px; margin: 14px auto; padding:18px; border-radius:10px;
   box-shadow: 0 6px 18px rgba(12,30,45,0.06); border-left:5px solid #2196f3;
   transition: transform .22s ease, box-shadow .22s;
+  background-image: url("https://d1csarkz8obe9u.cloudfront.net/posterpreviews/online-greeting-card-background-template-design-5cdce86655eed31b371eaed773a4fd32_screen.jpg?ts=1695664893");
 }
 .project-card:hover { transform: translateY(-6px); box-shadow: 0 14px 36px rgba(12,30,45,0.09); }
 
